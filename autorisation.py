@@ -17,7 +17,7 @@ class Ui_Autorisation(object):
     def setupUi(self, Autorisation):
         if not Autorisation.objectName():
             Autorisation.setObjectName(u"Autorisation")
-        Autorisation.resize(347, 373)
+        Autorisation.resize(728, 488)
         Autorisation.setStyleSheet(u"background-color: rgb(0, 97, 97);\n"
 "background-color: rgb(1, 96, 131);")
         self.verticalLayout_2 = QVBoxLayout(Autorisation)

@@ -19,6 +19,8 @@ class AutWindow(QtWidgets.QMainWindow):
 
 
         self.ui.pushButton_enter.clicked.connect(self.loginfunction)
+        self.ui.lineEdit_password.setEchoMode(QtWidgets.QLineEdit.Password)
+
 
     def loginfunction(self):
         login = self.ui.lineEdit_login.text()

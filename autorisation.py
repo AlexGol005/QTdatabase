@@ -17,21 +17,19 @@ class Ui_Autorisation(object):
     def setupUi(self, Autorisation):
         if not Autorisation.objectName():
             Autorisation.setObjectName(u"Autorisation")
-        Autorisation.resize(479, 457)
+        Autorisation.resize(347, 373)
         Autorisation.setStyleSheet(u"background-color: rgb(0, 97, 97);\n"
 "background-color: rgb(1, 96, 131);")
-        self.widget = QWidget(Autorisation)
-        self.widget.setObjectName(u"widget")
-        self.widget.setGeometry(QRect(10, 10, 451, 431))
-        self.verticalLayout_2 = QVBoxLayout(self.widget)
+        self.verticalLayout_2 = QVBoxLayout(Autorisation)
         self.verticalLayout_2.setObjectName(u"verticalLayout_2")
-        self.label_autorisation = QLabel(self.widget)
+        self.label_autorisation = QLabel(Autorisation)
         self.label_autorisation.setObjectName(u"label_autorisation")
         sizePolicy = QSizePolicy(QSizePolicy.Preferred, QSizePolicy.Preferred)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
         sizePolicy.setHeightForWidth(self.label_autorisation.sizePolicy().hasHeightForWidth())
         self.label_autorisation.setSizePolicy(sizePolicy)
+        self.label_autorisation.setMaximumSize(QSize(16777215, 40))
         self.label_autorisation.setStyleSheet(u"font: 75 28pt \"MS Shell Dlg 2\";\n"
 "color: rgb(255, 255, 255);")
         self.label_autorisation.setAlignment(Qt.AlignCenter)
@@ -40,7 +38,7 @@ class Ui_Autorisation(object):
 
         self.horizontalLayout = QHBoxLayout()
         self.horizontalLayout.setObjectName(u"horizontalLayout")
-        self.label_login = QLabel(self.widget)
+        self.label_login = QLabel(Autorisation)
         self.label_login.setObjectName(u"label_login")
         self.label_login.setStyleSheet(u"font: 75 18pt \"MS Shell Dlg 2\";\n"
 "color: rgb(255, 255, 255);")
@@ -48,7 +46,7 @@ class Ui_Autorisation(object):
 
         self.horizontalLayout.addWidget(self.label_login)
 
-        self.lineEdit_login = QLineEdit(self.widget)
+        self.lineEdit_login = QLineEdit(Autorisation)
         self.lineEdit_login.setObjectName(u"lineEdit_login")
         self.lineEdit_login.setStyleSheet(u"background-color: rgb(255, 255, 255);")
 
@@ -59,7 +57,7 @@ class Ui_Autorisation(object):
 
         self.horizontalLayout_2 = QHBoxLayout()
         self.horizontalLayout_2.setObjectName(u"horizontalLayout_2")
-        self.label_password = QLabel(self.widget)
+        self.label_password = QLabel(Autorisation)
         self.label_password.setObjectName(u"label_password")
         self.label_password.setStyleSheet(u"font: 75 18pt \"MS Shell Dlg 2\";\n"
 "color: rgb(255, 255, 255);")
@@ -67,7 +65,7 @@ class Ui_Autorisation(object):
 
         self.horizontalLayout_2.addWidget(self.label_password)
 
-        self.lineEdit_password = QLineEdit(self.widget)
+        self.lineEdit_password = QLineEdit(Autorisation)
         self.lineEdit_password.setObjectName(u"lineEdit_password")
         self.lineEdit_password.setStyleSheet(u"background-color: rgb(255, 255, 255);")
 
@@ -76,7 +74,7 @@ class Ui_Autorisation(object):
 
         self.verticalLayout_2.addLayout(self.horizontalLayout_2)
 
-        self.pushButton_enter = QPushButton(self.widget)
+        self.pushButton_enter = QPushButton(Autorisation)
         self.pushButton_enter.setObjectName(u"pushButton_enter")
         self.pushButton_enter.setMinimumSize(QSize(75, 0))
         self.pushButton_enter.setStyleSheet(u"background-color: rgb(0, 0, 255);\n"

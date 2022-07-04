@@ -17,15 +17,24 @@ class AutWindow(QtWidgets.QMainWindow):
         self.ui = Ui_Autorisation()
         self.ui.setupUi(self)
 
+
         self.ui.pushButton_enter.clicked.connect(self.loginfunction)
 
     def loginfunction(self):
+        login = self.ui.lineEdit_login.text()
+        password = self.ui.lineEdit_password.text()
+        print('успешная авторизация!')
 
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication()
 
     win = AutWindow()
+    widget = QtWidgets.QStackedWidget
+    # widget.addWidget(win)
+    # widget.setFixedWidth(480)
+    # widget.setFixedHeight(620)
+
     win.show()
 
     app.exec_()

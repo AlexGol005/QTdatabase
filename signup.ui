@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>Autorisation</class>
- <widget class="QMainWindow" name="Autorisation">
+ <class>SignUp</class>
+ <widget class="QMainWindow" name="SignUp">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>599</width>
-    <height>566</height>
+    <width>762</width>
+    <height>621</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -18,7 +18,7 @@
 background-color: rgb(1, 96, 131);</string>
   </property>
   <widget class="QWidget" name="centralwidget">
-   <layout class="QVBoxLayout" name="verticalLayout_5">
+   <layout class="QVBoxLayout" name="verticalLayout">
     <item>
      <layout class="QVBoxLayout" name="verticalLayout_7">
       <item>
@@ -40,7 +40,7 @@ background-color: rgb(1, 96, 131);</string>
 color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>Авторизация</string>
+         <string>Регистрация</string>
         </property>
         <property name="alignment">
          <set>Qt::AlignCenter</set>
@@ -102,24 +102,23 @@ color: rgb(255, 255, 255);</string>
     <item>
      <layout class="QHBoxLayout" name="horizontalLayout_6">
       <item>
-       <widget class="QLabel" name="label_no_acc">
+       <widget class="QLabel" name="label_password2">
         <property name="styleSheet">
-         <string notr="true">font: 75 12pt &quot;MS Shell Dlg 2&quot;;
+         <string notr="true">font: 75 18pt &quot;MS Shell Dlg 2&quot;;
 color: rgb(255, 255, 255);</string>
         </property>
         <property name="text">
-         <string>   Нет аккаунта?</string>
+         <string>Подтвердите пароль</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
         </property>
        </widget>
       </item>
       <item>
-       <widget class="QPushButton" name="pushButton_signup">
+       <widget class="QLineEdit" name="lineEdit_password2">
         <property name="styleSheet">
-         <string notr="true">background-color: rgb(0, 0, 255);
-font: 9pt &quot;MS Shell Dlg 2&quot;; color: rgb(255, 255, 255)</string>
-        </property>
-        <property name="text">
-         <string>Зарегистироваться</string>
+         <string notr="true">background-color: rgb(255, 255, 255);</string>
         </property>
        </widget>
       </item>
